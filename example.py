@@ -2,7 +2,7 @@ from facebook_crawler import FacebookCrawler
 
 auth_user = 'olvandgame@gmail.com'
 password = open('passwords/'+auth_user).read().strip()
-crawler = FacebookCrawler(user,password)
+crawler = FacebookCrawler(auth_user,password)
 
 example_user = 'antal.vandenbosch'
 user = crawler.get_user(example_user)
